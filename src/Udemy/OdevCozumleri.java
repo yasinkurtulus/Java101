@@ -1,3 +1,5 @@
+package Udemy;
+
 public class OdevCozumleri {
     public static void main(String[] args)
     {

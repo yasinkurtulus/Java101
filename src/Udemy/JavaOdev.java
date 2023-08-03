@@ -1,6 +1,8 @@
+package Udemy;
+
 public class JavaOdev {
     public static void main(String[] args) {
-        //bir ınteger değişkenş oluşturun ve saniye değerini tutun. Bunu dakika ve saniye cinsinden yazdırın
+        //bir ınteger değişkeni oluşturun ve saniye değerini tutun. Bunu dakika ve saniye cinsinden yazdırın
         int zaman=500;
         int dakika=zaman/60;
         double saniye=zaman%60;

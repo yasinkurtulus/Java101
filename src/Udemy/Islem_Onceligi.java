@@ -1,3 +1,5 @@
+package Udemy;
+
 public class Islem_Onceligi {
     public static void main(String[] args) {
         int sayi1=15;

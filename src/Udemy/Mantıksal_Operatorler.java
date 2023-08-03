@@ -1,3 +1,5 @@
+package Udemy;
+
 public class Mantıksal_Operatorler {
     public static void main(String[] args) {
         int sayi1=10;
