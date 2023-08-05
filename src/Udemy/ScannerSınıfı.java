@@ -7,7 +7,7 @@ public class ScannerSınıfı {
 
 
         Scanner scanner=new Scanner(System.in);
-       System.out.println("İsminizi Giriniz:");
+     /*  System.out.println("İsminizi Giriniz:");
         String isimSoysisim= scanner.nextLine();
         System.out.println("Yaşınızı Girin: ");
         int yas= scanner.nextInt();
@@ -17,7 +17,9 @@ public class ScannerSınıfı {
         String isims= scanner.next();
         System.out.println(isims);
         String soyisim= scanner.nextLine();
-        System.out.println(soyisim);
+        System.out.println(soyisim);*/
+        boolean a=scanner.nextBoolean();
+        System.out.println(a);
 
 
 
