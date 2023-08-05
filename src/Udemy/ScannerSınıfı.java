@@ -7,7 +7,7 @@ public class ScannerSınıfı {
 
 
         Scanner scanner=new Scanner(System.in);
-     /  System.out.println("İsminizi Giriniz:");
+       System.out.println("İsminizi Giriniz:");
         String isimSoysisim= scanner.nextLine();
         System.out.println("Yaşınızı Girin: ");
         int yas= scanner.nextInt();
