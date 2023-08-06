@@ -18,6 +18,8 @@ public class MathSinifi {
         System.out.println(random);
         //0'dan 100'a kadar sayı üretme
         int randomsayi=(int)(Math.random()*101);
+        int sansliSayibirincibasamak=randomsayi/10;
+        int sansliSayiikincibasamak=randomsayi%10;
         System.out.println(randomsayi);
 
     }
