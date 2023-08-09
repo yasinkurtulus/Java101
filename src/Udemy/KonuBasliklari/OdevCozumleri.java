@@ -1,4 +1,4 @@
-package Udemy;
+package Udemy.KonuBasliklari;
 
 public class OdevCozumleri {
     public static void main(String[] args)

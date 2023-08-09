@@ -1,4 +1,4 @@
-package Udemy;
+package Udemy.KonuBasliklari;
 
 public class Mantıksal_Operatorler {
     public static void main(String[] args) {

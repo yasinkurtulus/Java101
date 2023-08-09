@@ -1,4 +1,4 @@
-package Udemy;
+package Udemy.KonuBasliklari;
 
 public class KontrolYapilari {
     public static void main(String[] args) {

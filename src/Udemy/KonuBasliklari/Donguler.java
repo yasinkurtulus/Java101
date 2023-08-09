@@ -1,8 +1,8 @@
-package Udemy;
+package Udemy.KonuBasliklari;
 
 public class Donguler {
     public static void main(String[] args) {
-            int sayi=11;
+        int sayi = 11;
        /* for (  ;sayi<15; sayi++){
             System.out.println("merhaba");
             System.out.println(sayi);
@@ -28,8 +28,8 @@ public class Donguler {
 
 
         //break,counitine ,return<
-        birincifor:
-        for (int i=0;i<5;i++){
+
+       /* for (int i=0;i<5;i++){
             ikincifor:
             for (int a=0;a<4;a++){
                 if (i==1&&a==1)
@@ -37,13 +37,17 @@ public class Donguler {
                 System.out.println("I:"+ i +" a:"+a);
               //  if (i==1&&a==1)
                    // break birincifor;
+            }*/
+        for (int i=0;i<3;i++){
+            for (int a=0;a<3;a++){
+                System.out.println("i:"+i+" a:"+a);
+                if (i==1&&a==2)
+                    break;
             }
         }
-
-
-
-
-
-
     }
+
+
+
+
 }

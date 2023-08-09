@@ -1,4 +1,4 @@
-package Udemy;
+package Udemy.KonuBasliklari;
 
 public class JavaOdev {
     public static void main(String[] args) {
