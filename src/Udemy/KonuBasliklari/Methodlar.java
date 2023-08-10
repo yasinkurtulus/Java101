@@ -7,7 +7,6 @@ public class Methodlar {
   static Scanner scanner=new Scanner(System.in);
   static int c=5;
     public static void main(String[] args) {
-
         while (true){
             int secim=menu();
             if (secim==0)
@@ -16,7 +15,8 @@ public class Methodlar {
                     case 1: System.out.println("1.Sayıyı giriniz: ");
                         int sayi1=scanner.nextInt();
                         System.out.println("2.Sayıyı giriniz: ");
-                        int sayi2=scanner.nextInt(); topla(sayi1,sayi2);break;
+                        int sayi2=scanner.nextInt();
+                        topla(sayi1,sayi2);break;
                 case 2:System.out.println("1.Sayıyı giriniz: ");
                      sayi1=scanner.nextInt();
                     System.out.println("2.Sayıyı giriniz: ");
@@ -27,6 +27,8 @@ public class Methodlar {
                     System.out.println("2.Sayıyı giriniz: ");
                      sayi2=scanner.nextInt();
                     System.out.println(kuvvetAl(sayi1,sayi2));break;
+                case 4:
+                    System.out.println(carp(sayi1=5));
                 default:
                     System.out.println("Yanlış tuşlama yaptınız baştan deneyin");
                     break;
@@ -41,6 +43,9 @@ public class Methodlar {
         System.out.println("Çıkmak için 0 tuşlayın");
          int secim=scanner.nextInt();
          return secim;
+    }
+    public static double carp(double a){
+        return a*5;
     }
     public static void topla(int a, int b){
         System.out.println(a+b);
