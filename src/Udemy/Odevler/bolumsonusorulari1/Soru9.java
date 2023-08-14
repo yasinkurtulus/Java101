@@ -1,4 +1,4 @@
-package Udemy.Odevler;
+package Udemy.Odevler.bolumsonusorulari1;
 
 public class Soru9 {
     public static void main(String[] args) {

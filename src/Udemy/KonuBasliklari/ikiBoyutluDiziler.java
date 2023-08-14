@@ -9,6 +9,8 @@ public class ikiBoyutluDiziler {
         ikiboyutludizi[1][0]=3;
         ikiboyutludizi[1][1]=18;
         ikiboyutludizi[1][2]=45;
+        int a=5/8;
+        System.out.println(a);
 
         int netborc=0;
         int[][]borcdizisi={{0,100,200}, {350,0,250}, {150,500,0}};

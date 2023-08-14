@@ -1,4 +1,4 @@
-package Udemy.Odevler;
+package Udemy.Odevler.bolumsonusorulari1;
 
 import java.util.Scanner;
 
