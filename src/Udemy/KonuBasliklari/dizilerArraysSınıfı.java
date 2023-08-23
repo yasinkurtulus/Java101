@@ -33,6 +33,7 @@ public class dizilerArraysSınıfı {
 
 
 
+
     }
     public static  void diziyazdır(int[]dizi){
         for(int i:dizi){
