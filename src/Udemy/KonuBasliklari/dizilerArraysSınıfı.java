@@ -10,7 +10,7 @@ public class dizilerArraysSınıfı {
         int[] sayilar3={ };
         int[] sayilar4={ };
         diziyazdır(sayilar);
-        //Array.sort bütün diziyi sıralar
+        //Arrays.sort bütün diziyi sıralar
         //Arrays.sort(sayilar);
         System.out.println("\n sıralandıktan sonra diziler");
        // diziyazdır(sayilar);

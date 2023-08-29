@@ -14,16 +14,18 @@ public class KalitimKavrami {
 }
 class Kisiler{
     private String isim;
-    private int tc,yas;
+    private int tc;
+     int yas=20;
+     static int a=1;
 
 
     public Kisiler(String isim, int tc, int yas) {
         this.isim = isim;
-        this.tc = tc;
+        this.tc = tc;;
         setYas(yas);
     }
 
-    public String getIsim() {
+    public  String getIsim() {
         return isim;
     }
 
@@ -53,16 +55,19 @@ class Kisiler{
     public String toString() {
         return "isim "+isim+" tc "+tc+" yaş "+yas;
     }
+
 }
 class Ogrenci extends Kisiler{
-    private int ogrno;
+    public int ogrno;
     private int sinif;
+    int yas=10;
 
 
     public Ogrenci(String isim, int tc, int yas, int ogrno, int sinif) {
         super(isim, tc, yas);
         this.ogrno = ogrno;
         this.sinif = sinif;
+        a=5;
     }
 
     public int getOgrno() {
@@ -72,6 +77,7 @@ class Ogrenci extends Kisiler{
     public void setOgrno(int ogrno) {
         this.ogrno = ogrno;
     }
+
 
     public int getSinif() {
         return sinif;
@@ -85,6 +91,7 @@ class Ogrenci extends Kisiler{
     public String toString() {
         return  "isim "+getIsim()+" tc "+getTc()+" yaş "+getYas()+" no "+ogrno+" sınıf "+sinif;
     }
+
 }
 class MezunOgrenci extends Ogrenci{
     private int mezuniyetyili;
@@ -92,6 +99,7 @@ class MezunOgrenci extends Ogrenci{
     public MezunOgrenci(String isim, int tc, int yas, int ogrno, int sinif,int mezuniyetyili) {
         super(isim, tc, yas, ogrno, sinif);
         this.mezuniyetyili=mezuniyetyili;
+
     }
 
     public int getMezuniyetyili() {
@@ -107,6 +115,8 @@ class MezunOgrenci extends Ogrenci{
         return super.toString();
     }
 }
+
+
 
 
 

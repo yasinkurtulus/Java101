@@ -1,5 +1,7 @@
 package Udemy.Bolum8;
 
+import Udemy.Bolum8.Bolum_SonuProjeler.YıgınYapısıOlusturma;
+
 import java.sql.Array;
 import java.util.Arrays;
 import java.util.List;
@@ -35,7 +37,7 @@ public class ArrayList {
         }
     }
 }
-class Telefon{
+class Telefon extends YıgınYapısıOlusturma {
     int fiyat;
     String marka;
 

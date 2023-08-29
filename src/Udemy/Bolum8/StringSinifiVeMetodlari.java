@@ -16,7 +16,7 @@ public class StringSinifiVeMetodlari {
         System.out.println("   asdsaas".trim());
         System.out.println(isim.substring(1,4));*/
         System.out.println(isim.contains("so"));
-        System.out.println("ybc".compareTo("dyz"));
+        System.out.println("abc".compareTo("ayf"));
         String a="Yaso2";
         System.out.println(isim.equals(a));
 

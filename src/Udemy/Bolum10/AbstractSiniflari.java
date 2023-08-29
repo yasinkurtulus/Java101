@@ -1,4 +1,4 @@
-package Udemy.Bolum8;
+package Udemy.Bolum10;
 
 public class AbstractSiniflari {
     public static void main(String[] args) {
@@ -66,6 +66,7 @@ abstract class GeometrikSekil{
     public void setCevre(int cevre) {
         this.cevre = cevre;
     }
+
 }
 class Kare extends GeometrikSekil{
 public Kare(int i){
@@ -103,7 +104,7 @@ class Dikdortgen extends GeometrikSekil{
         System.out.println("Çevre:"+getCevre());
     }
 }
-class Daire extends GeometrikSekil{
+ class Daire extends GeometrikSekil{
     public Daire(int birincikenar) {
         super(birincikenar);
     }
