@@ -40,6 +40,7 @@ public class ArrayListKullanimi {
         System.out.println(isimler);
         isimler.addAll(1, isimler3);
         System.out.println(isimler);
+        Collections.sort(isimler);
 
         //diziyi array liste dönüştürmek
         String[] sehirler = {"sakarya", "eskişehir", "bursa"};

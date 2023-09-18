@@ -1,9 +1,6 @@
 package Udemy.bolum12;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
 public class linkedlist {
     public static void main(String[] args) {
@@ -14,6 +11,7 @@ public class linkedlist {
         System.out.println(linkedlist);
         arraylisthazirla(arraylist);
         System.out.println(arraylist);
+
     }
     public static void arraylisthazirla(ArrayList<Integer> arraylist){
         for (int i=0;i<10;i++){
@@ -36,7 +34,8 @@ public class linkedlist {
             int karsilastirma=iterator.next().compareTo(gelensayi);
             if (karsilastirma==0){
                 iterator.add(gelensayi);
-                return;}
+                return;
+                 }
 
             else if (karsilastirma>0){
                 iterator.previous();
@@ -45,6 +44,7 @@ public class linkedlist {
             }
         }
         iterator.add(gelensayi);
+
 
     }
 }
