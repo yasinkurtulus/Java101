@@ -47,6 +47,8 @@ public class ArrayListKullanimi {
         List<String> sehitrlerlist;
         sehitrlerlist = Arrays.asList(sehirler);
         ArrayList<String> sehirler2 = new ArrayList<>(Arrays.asList(sehirler));
+        
+
     }
 }
 

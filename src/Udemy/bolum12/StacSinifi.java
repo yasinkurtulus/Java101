@@ -7,7 +7,7 @@ public class StacSinifi {
     //StackSınıfı vector sınıfından kalıtılmıştır
     public static void main(String[] args) {
         Stack<String>yıgın=new Stack<>();
-        LinkedList<String>likedlist=new LinkedList<>();
+        LinkedList<String>linkedlist=new LinkedList<>();
         yıgın.add("yaso");
         yıgın.add("yaso");
         //yıgın.add(2,"yamo"); yıgına index kullanrak eleman eklenmez
@@ -15,17 +15,18 @@ public class StacSinifi {
         yıgın.add("billal");
         yıgın.push("taso");
         yıgın.push("faso");
+
         System.out.println(yıgın.pop());//en üsttekş elemanu çıkarır
         System.out.println(yıgın.peek());//en üstteki elemanı görüntüler çıkarmaz
         System.out.println(yıgın.search("taso"));
         System.out.println(yıgın.search("yaso"));
         System.out.println(yıgın);
-        likedlist.push("yaso");
-        likedlist.push("taso");
-        likedlist.push("maso");
-        likedlist.push("bilal");
-        System.out.println(likedlist);
-        System.out.println(likedlist.pop());
+        linkedlist.push("yaso");
+        linkedlist.push("taso");
+        linkedlist.push("maso");
+        linkedlist.push("bilal");
+        System.out.println(linkedlist);
+        System.out.println(linkedlist.pop());
 
     }
 }
