@@ -20,6 +20,10 @@ public class Ders {
                 '}';
     }
 
+    public String getDersAdi() {
+        return dersAdi;
+    }
+
     public double getDersSuresi() {
         return dersSuresi;
     }

@@ -27,7 +27,7 @@ public class Kurs {
         else
         egitmenler.add(egitmen);
     }
-    public void egitmencikar(Egitmen egitmen){
+    public void egitmenCikar(Egitmen egitmen){
         if (egitmen!=egitmenler.get(0)) {
             egitmenler.remove(egitmen);
             System.out.println(egitmen.getIsim()+" isimli eğitmen kurs eğitmenliğinden çıkarıldı");
@@ -53,7 +53,7 @@ public class Kurs {
             derssayisi++;
         }
     }
-    private boolean yayinlanabilirkontrol(){
+    public boolean yayinlanabilirkontrol(){
         if (toplamsure()>60&&derssayisi>=5)
             return true;
         else return false;
@@ -78,6 +78,7 @@ public class Kurs {
         return egitmenler;
     }
 
-
-
+    public ArrayList<Ders> getDersler() {
+        return dersler;
+    }
 }
