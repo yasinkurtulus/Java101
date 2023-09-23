@@ -8,8 +8,12 @@ import java.util.Scanner;
 import static Udemy.KonuBasliklari.Methodlar.menu;
 
 public class Main {
+       static Scanner scanner=new Scanner(System.in);
+       static  ArrayList<Kurs> kurslar=new ArrayList<>();
+       static  ArrayList<Ders> dersler=new ArrayList<>();
+       static  Egitmen e1;
         public static void main(String[] args) {
-                Ogrenci ogr1 = new Ogrenci("Yasin", "ogrenci");
+               /* Ogrenci ogr1 = new Ogrenci("Yasin", "ogrenci");
                 Egitmen e1 = new Egitmen("emre", "Bas egitmen");
                 Egitmen e2 = new Egitmen("ceren", "yardımcı");
                 Ders d1 = new Ders("Java Giris", 10, 1);
@@ -40,7 +44,83 @@ public class Main {
                 ogr1.setIzlenecekDersListesiDersEkle(d2);
                 ogr1.setIzlenecekDersListesiDersEkle(d3);
                 ogr1.setIzlenecekDersListesiDersEkle(d7);
-                izlenemListesiGez(ogr1.getIzlenecekDersListesi());
+                izlenemListesiGez(ogr1.getIzlenecekDersListesi());*/
+                System.out.println("Adınızı Giriniz:");
+                String egitmenad=scanner.nextLine();
+                 e1=new Egitmen(egitmenad,"Bas Egitmen");
+                boolean dongu=true;
+                while (dongu){
+                        System.out.println("Yapmak İstediğiniz işlem");
+                        System.out.println("*********MAIN MENU*********");
+                        System.out.println("1-Kurs İşlemleri");
+                        System.out.println("2-Ogrenci Ekle");
+                        System.out.println("0-Çıkış");
+                        int secim= scanner.nextInt();
+                        switch (secim){
+                                case 0: dongu=false;
+                                break;
+                                case 1:kursIslemeri();
+                        }
+
+                }
+
+        }
+
+        private static void kursIslemeri() {
+                boolean dongu=true;
+                while(dongu){
+                System.out.println("****Kurs Islemleri****");
+                System.out.println("1-Yeni Kurs Olustur");
+                System.out.println("2-Mevcut Kursa Ders Ekle");
+                System.out.println("3-Kurs Kaldır");
+                System.out.println("4-Kurslari Listele");
+                System.out.println("0-Ust Menu");
+                int secim= scanner.nextInt();
+                switch (secim){
+                        case 0:dongu=false;
+                        break;
+                        case 1: kursekle();
+                        break;
+                        case 2: dersekle();
+                }
+                }
+
+
+        }
+
+        private static void dersekle() {
+                boolean dongu=true;
+                while (dongu){
+                        System.out.println("Hangi Kursa Ders Ekleyeceksiniz");
+                        kurslistele();
+                        int secim= scanner.nextInt();;
+                        if(secim<=kurslar.size()&&secim>0) {
+                                System.out.println("Ders Basligi Giriniz");
+                                scanner.nextLine();
+                                String baslik=scanner.nextLine();
+                                System.out.println("Ders Suresi:");
+                                double sure= scanner.nextDouble();
+                                System.out.println("Ders Oluşturuldu");
+                                kurslar.get(secim-1).dersEkle(new Ders(baslik,sure,0));
+                        }
+                }
+        }
+
+        private static void kurslistele() {
+                int a=1;
+                for (Kurs i:kurslar){
+                        System.out.println(a+" "+i);
+                        a++;
+                }
+
+        }
+
+        private static void kursekle() {
+                System.out.println("Kurs Adi Giriniz: ");
+                 scanner.nextLine();
+                String kursadi= scanner.nextLine();
+                kurslar.add(new Kurs(kursadi,e1));
+                System.out.println(kursadi+" Adli Kurs Oluşturulmuştur");
         }
 
         public static void izlenemListesiGez(LinkedList<Ders> liste) {

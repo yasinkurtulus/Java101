@@ -11,6 +11,7 @@ public class linkedlist {
         System.out.println(linkedlist);
         arraylisthazirla(arraylist);
         System.out.println(arraylist);
+        System.out.println(linkedlist.get(0));
 
     }
     public static void arraylisthazirla(ArrayList<Integer> arraylist){

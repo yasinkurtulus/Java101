@@ -81,4 +81,11 @@ public class Kurs {
     public ArrayList<Ders> getDersler() {
         return dersler;
     }
+
+    @Override
+    public String toString() {
+        return "Kurs:" +
+                "kursadi='" + kursadi + '\'' +
+                ' ';
+    }
 }
